@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DailyActivity" >
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+		   style="?android:attr/buttonBarButtonStyle"
+           android:layout_marginRight="43dp"
+           android:text="Click" />
+
+
+        
+    <EditText
+        android:gravity="bottom"      
+        android:id="@+id/list"
+        android:hint="请输入正文！"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list"
+        android:layout_alignBottom="@+id/list"
+        android:layout_alignParentLeft="true"
+
+        android:textSize="20dp" />
+    
+
+
+    <ImageView
+        android:id="@+id/permission_icon"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_marginTop="3dp"
+        android:tint="?android:attr/colorAccent"
+        android:scaleType="fitCenter" 
+        android:src="@drawable/perm_group_sensors"/>
+
+</RelativeLayout>
